@@ -1,0 +1,19 @@
+// global.scss Собирает в себя все SCSS файлы и компилируется в global.css
+// Никакие другие SCSS файлы не компилируются
+// В папке /modules хранятся SCSS файлы, содержащие переменные и шаблонные селекторы.
+@import "moduls/variables";
+@import "moduls/selectors";
+@import "moduls/mixins";
+
+
+@import "layouts/main";
+@import "layouts/header";
+@import "layouts/fly-elements";
+@import "layouts/tittle-section";
+@import "layouts/what-i-do";
+@import "layouts/my-works";
+@import "layouts/my-commers";
+@import "layouts/footer";
+@import "layouts/modals";
+@import "layouts/section-button";
+@import "layouts/bordered-button";

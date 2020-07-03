@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  color: #fff;
+  background-color: $color-main-pink;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-width: 320px;
+    font: {
+      family: 'Roboto', sans-serif;
+      weight: 400;
+      style: normal;
+    }
+}
+
+.body__mobile-scroll-hidden {
+  overflow-y: hidden;
+}
+
+.center-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}

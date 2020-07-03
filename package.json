@@ -1,0 +1,22 @@
+{
+  "name": "graduate-work",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "anchor-js": "^4.2.2",
+    "git": "^0.1.5",
+    "gulp": "^4.0.2",
+    "swiper": "^5.3.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

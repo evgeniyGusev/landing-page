@@ -1,0 +1,368 @@
+.modal-wrapper {
+  @include d-flex(null, null, center, center);
+
+  display: none;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 200px 30px #000;
+  z-index: 100;
+  transition: top .3s ease-in;
+
+  @media screen and (min-width: 1000px) {
+    box-shadow: inset 0 0 200px 100px #000;
+  }
+}
+
+// modal-form =====================
+.modal-form {
+  @include d-flex(column, null, center, center);
+
+  display: none;
+  position: relative;
+  max-width: 500px;
+  padding: 30px 10px 20px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 4px solid $color-main-pink;
+  border-radius: 9px;
+  box-shadow: 5px 5px 10px #000;
+  transform-origin: 0 50%;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: fly;
+
+  @keyframes fly {
+    0% {
+      transform: perspective(1000px) rotateY(-10deg);
+      box-shadow: 5px 7px 12px 5px #000;
+    }
+
+    50% {
+      transform: translate(3px, 3px) perspective(1000px) rotateY(-10deg);
+      box-shadow: 3px 3px 5px 1px #000;
+    }
+
+    100% {
+      transform: translate(0, 0) perspective(1000px) rotateY(-10deg);
+      box-shadow: 5px 7px 12px 5px #000;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 65px;
+		height: 35px;
+    background-image: url('../../img/pictures/tittle-back-pic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform-origin: 0 50%;
+		transform: translateX(-50%) perspective(1000px) rotateY(-10deg);
+	}
+
+  &::after {
+    content: "";
+    width: 100%;
+    padding: 5px;
+		position: absolute;
+		border-bottom: 1px solid #00000050;
+    box-shadow: -2px 1px 2px 0 #000;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background-color: $color-main-pink;
+    transform: rotate(-90deg);
+		animation-name: light;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+
+		@keyframes light {
+			0% {
+				box-shadow: 0 0 0 0 #000;
+			}
+
+			50% {
+				box-shadow:  -2px 1px 2px 0 #000;
+			}
+
+			100% {
+				box-shadow: 0 0 0 0 #000;
+			}
+		}
+  }
+
+  &.modal-form--get-call::after {
+    content: "Заказ звонка";
+    width: 70%;
+    left: -97px;
+  }
+
+  &.modal-form--get-project::after {
+    content: "Заказ проекта";
+    left: -112px;
+
+    @media screen and (min-width: 650px) {
+      width: 50%;
+      left: -110px;
+    }
+  }
+
+  &__close-button {
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0 #000;
+    background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      transform: rotate(315deg);
+      transition: .5s ease-in-out;
+    }
+  }
+
+  &__label {
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  &__input {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid $color-main-pink;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px 0 #000;
+    font-weight: 700;
+    font-size: 12px;
+    color: $color-main-pink;
+
+    &::placeholder {
+      color: $color-buttons-bg;
+      opacity: .5;
+      transition: opacity .2s ease;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 1px 1px 3px 0 #000;
+
+      &::placeholder {
+        opacity: .2;
+        transition: opacity .2s ease;
+      }
+    }
+  }
+
+  &__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__select-delimiter {
+    font-size: 20px;
+    color: #444;
+  }
+
+  &__select {
+    padding: 5px 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 2px solid $color-main-pink;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px 0 #000;
+    color: #444;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #fff;
+    width: 85px;
+    height: 30px;
+    border-radius: 70% 100% 50% 70%;
+    box-shadow: 2px 2px 3px #000;
+    background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .2s ease;
+
+    &:hover {
+      box-shadow: none;
+      border-color: #444;
+      transform: translate(2px, 2px);
+      transition: .2s ease;
+    }
+  }
+
+  &__radio-box {
+    @include d-flex(column, null, center, center);
+
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 650px) {
+      flex-direction: row;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__label--radio {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid $color-main-pink;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 #000;
+    transform: translate(0, 0);
+    color: #444;
+    transition: .4s ease;
+
+    @media screen and (min-width: 650px) {
+      margin-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  #landing:checked ~ #landing-checked,
+  #shop:checked ~ #shop-checked,
+  #full-site:checked ~ #full-site-checked {
+
+    @include radio-button;
+  }
+
+}
+
+.modal-form__change {
+  @include d-flex(row, nowrap, center, center);
+
+  margin-bottom: 20px;
+
+  >*:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.get-call-submit {
+  width: 130px;
+  letter-spacing: 0;
+}
+
+// to-top button
+.to-top-button {
+  width: 50px;
+  height: 100px;
+  position: fixed;
+  top: -170px;
+  right: 10px;
+  border: 1px solid #ffffff50;
+  border-radius: 5%;
+  box-shadow: 1px 1px 1px 0 #00000050;
+  background-color: #ff637586;
+  z-index: 9;
+  transition: .2s ease-in;
+
+  @media screen and (min-width: 728px) {
+    width: 70px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 70px;
+    right: 3%;
+    height: 165px;
+  }
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 15px 12.5px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .8;
+
+    @media screen and (min-width: 1100px){
+      top: 120px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+    background: #fff;
+    opacity: .8;
+  }
+}
+
+.to-top-button--show {
+  top: -45px;
+  transition: .3s ease-out;
+
+  @media screen and (min-width: 1100px) {
+    top: -5;
+  }
+}
+
+.submit-modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 120%;
+  padding: 100px 0;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 97, 115);
+  box-shadow: 0 0 200px 0 #000;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  z-index: 200;
+}

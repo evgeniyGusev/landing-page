@@ -1,0 +1,24 @@
+@mixin d-flex($f-dir, $f-wrap, $j-cont, $a-items) {
+  display: flex;
+
+  flex-direction: $f-dir;
+  flex-wrap: $f-wrap;
+  justify-content: $j-cont;
+  align-items: $a-items;
+}
+
+@mixin bordered-button($pad-lr) {
+  padding: 15px $pad-lr;
+  color: $color-main-pink;
+  border: 1px solid $color-main-pink;
+  cursor: pointer;
+}
+
+@mixin radio-button {
+  color: #fff;
+  border: none;
+  background-color: $color-main-pink;
+  box-shadow: inset 2px 2px 3px 0 #000;
+  transform: translate(3px, 2px);
+  transition: .2s ease;
+}

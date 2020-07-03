@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css/global.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Фавиконы и иконки сайта -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon/apple-touch-icon-57x57.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon/apple-touch-icon-60x60.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon/apple-touch-icon-72x72.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon/apple-touch-icon-76x76.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon/apple-touch-icon-114x114.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon/apple-touch-icon-120x120.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon/apple-touch-icon-144x144.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon/apple-touch-icon-152x152.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon/apple-touch-icon-180x180.png" data-mce-href="img/favicon/apple-touch-icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/eg-favicon-32x32.png" sizes="32x32" data-mce-href="img/favicon/eg-favicon-32x32.png">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192" data-mce-href="img/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="img/favicon/eg-favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon/eg-favicon-96x96.png">
+    <link rel="icon" type="image/png" href="img/favicon/eg-favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon/eg-favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="img/favicon/eg-favicon-144x144.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4">
+
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script src="https://kit.fontawesome.com/74c72fc1ae.js"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <title>Евгений Гусев</title>
+  </head>
+
+  <body class="body">
+
+    <header class="header header-shadow" id="top">
+      <div class="header__flex-wrapper center-wrapper">
+        <button class="header-nav-button" id="header-nav-button--listener">
+          <span class="header-nav-button__line" id="header-nav-button__line--listener"></span>
+        </button>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__element">
+              <a href="#what-i-do" class="header-nav__link link-to-do">Услуги</a>
+            </li>
+            <li class="header-nav__element">
+              <a href="#my-works" class="header-nav__link link-to-works">Портфолио</a>
+            </li>
+            <li class="header-nav__element">
+              <a href="#cost" class="header-nav__link link-to-cost">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__relations">
+          <a href="tel:+79998290333" class="header__number">+7 (999) 829-02-49</a>
+          <button class="header__button" id="header-getcall">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="tittle-section">
+        <div class="tittle-section__wrapper center-wrapper">
+					<div class="fly-element-wrapper tittle-section__fly-element-wrapper" aria-hidden="true">
+						<i class="tittle-section__fly-element tittle-section__fly-element--braces">{}</i>
+						<i class="tittle-section__fly-element tittle-section__fly-element--lattice">#</i>
+						<i class="tittle-section__fly-element tittle-section__fly-element--slash">&lt;/&gt;</i>
+						<i class="tittle-section__fly-element tittle-section__fly-element--slash--tabletScreen">&lt;/&gt;</i>
+						<i class="tittle-section__fly-element tittle-section__fly-element--div-top">&lt;div&gt;</i>
+						<i class="tittle-section__fly-element tittle-section__fly-element--div-bottom">&lt;div&gt;</i>
+          </div>
+
+          <div class="tittle-section__photo-wrapper">
+            <img class="tittle-section__photo" src="img/pictures/my-photo.png" alt="Дмитрий Алексеев">
+          </div>
+
+          <div class="tittle-section__description">
+            <h1 class="tittle-section__tittle">Евгений Гусев</h1>
+            <p class="tittle-section__text">Frontend-разработчик и веб-верстальщик</p>
+            <button class="section-button tittle-section__button">Узнать больше</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="what-i-do center-wrapper" id="what-i-do">
+        <h2 class="what-i-do__tittle">Что я делаю</h2>
+
+        <ul class="what-i-do-list">
+          <li class="what-i-do-list__element what-i-do-list__element--any-complexity">
+            Вёрстка лендинг–страниц<br>и сайтов любой сложности
+          </li>
+          <li class="what-i-do-list__element what-i-do-list__element--adaptive">
+            Адаптивная вёрстка под все<br>браузеры и устройства
+          </li>
+          <li class="what-i-do-list__element what-i-do-list__element--frontend">
+            Frontend–разработка<br>и программирование
+          </li>
+          <li class="what-i-do-list__element what-i-do-list__element--correction">
+            Исправление и доработка<br>существующей вёрстки
+          </li>
+        </ul>
+
+        <button class="section-button what-i-do__how-cost-button">Узнать стоимость</button>
+      </section>
+
+      <section class="my-works" id="my-works">
+        <div class="my-works__wrapper center-wrapper">
+          <h2 class="my-works__tittle">Примеры моих работ</h2>
+
+          <!-- _________ slider block _________ -->
+          <div class="my-works-slider">
+            <ul class="my-works-slider__list">
+              <li class="my-works-slider__element">
+                <a href="#" class="my-works-slider__link" target="_blank">
+                  <img src="img/pictures/my-works-pic1.jpg" alt="Сайт психолога Веры Антоновой" class="my-works-slider__picture">
+                  Сайт психолога Веры Антоновой
+                </a>
+              </li>
+              <li class="my-works-slider__element">
+                <a href="#" class="my-works-slider__link" target="_blank">
+                  <img src="img/pictures/my-works-pic2.jpg" alt="Сайт магазина детской одежды" class="my-works-slider__picture">
+                  Сайт магазина детской одежды
+                </a>
+              </li>
+              <li class="my-works-slider__element">
+                <a href="#" class="my-works-slider__link" target="_blank">
+                  <img src="img/pictures/my-works-pic3.jpg" alt="Сайт магазина «Рыболов»" class="my-works-slider__picture">
+                  Сайт магазина «Рыболов»
+                </a>
+              </li>
+            </ul>
+
+						<button class="my-works-slider__control-btn my-works-slider__control-btn--prev" aria-label="Предыдущий слайд"></button>
+						<button class="my-works-slider__control-btn my-works-slider__control-btn--next" aria-label="Следующий слайд"></button>
+
+            <div class="my-works-slider__pagination pagination"></div>
+          </div>
+
+          <button class="section-button my-works__get-project-button">Заказать проект</button>
+        </div>
+      </section>
+
+      <section class="my-commerce" id="cost">
+        <div class="my-commerce__wrapper center-wrapper">
+
+          <div class="fly-element-wrapper" aria-hidden="true">
+            <i class="my-commerce__fly-element my-commerce__fly-element--braces--left">{}</i>
+            <i class="my-commerce__fly-element my-commerce__fly-element--lattice">#</i>
+            <i class="my-commerce__fly-element my-commerce__fly-element--div">&lt;div&gt;</i>
+            <i class="my-commerce__fly-element my-commerce__fly-element--slash">&lt;/&gt;</i>
+            <i class="my-commerce__fly-element my-commerce__fly-element--braces--right">{}</i>
+          </div>
+
+          <h2 class="my-commerce__tittle">Адаптивная вёрстка под все устройства<br>и браузеры от 1000 рублей всего за 4 часа.*</h2>
+          <p class="my-commerce__text">
+            * Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,<br>в зависимости от сложности задач.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper center-wrapper">
+
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__element">
+              <a href="#what-i-do" class="footer-nav__link link-to-do">Услуги</a>
+            </li>
+            <li class="footer-nav__element">
+              <a href="#my-works" class="footer-nav__link link-to-works">Портфолио</a>
+            </li>
+            <li class="footer-nav__element">
+              <a href="#cost" class="footer-nav__link link-to-cost">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-communication">
+          <a href="tel:+79998290333" class="footer-communication__element"><i class="footer-communication__pic fas fa-phone-alt"></i>+7 (999) 829-02-49</a>
+          <a href="mailto:dmitry@alekseev.com" class="footer-communication__element"><i class="footer-communication__pic fas fa-envelope"></i>evgeniy@gusev.com</a>
+        </div>
+
+        <div class="footer-social">
+          <button class="section-button section-button--footer-call-button" id="footer-getcall">Заказать звонок</button>
+          <ul class="footer-social__list">
+            <li class="footer-social__element">
+              <a href="https://vk.com/dj_flavor" target="_blank" class="footer-social__link footer-social__link--vk"></a>
+            </li>
+            <li class="footer-social__element">
+              <a href="https://www.facebook.com/shchelkalinevgeniy" target="_blank" class="footer-social__link footer-social__link--fb"></a>
+            </li>
+            <li class="footer-social__element">
+              <a href="http://twitter.com" target="_blank" class="footer-social__link footer-social__link--twit"></a>
+            </li>
+            <li class="footer-social__element">
+              <a href="https://www.instagram.com/johnqooq/" target="_blank" class="footer-social__link footer-social__link--inst"></a>
+            </li>
+            <li class="footer-social__element">
+              <a href="https://github.com/evgeniyGusev" target="_blank" class="footer-social__link footer-social__link--git"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="footer__copyright">
+        © Евгений Гусев, 2020
+      </p>
+    </footer>
+
+
+    <!-- to-top-button -->
+    <button class="to-top-button"></button>
+
+    <!-- get-call modal -->
+    <div class="modal-wrapper" id="get-call-modal">
+      <form class="modal-form modal-form--get-call" method="POST">
+
+        <div class="modal-form__close-button">+</div>
+
+        <label class="modal-form__label" for="user-name">Как Вас зовут?</label>
+        <input type="text" class="modal-form__input" id="user-name" name="Имя" value="" maxlength="12" minlength="2" placeholder="Имя" required>
+
+        <label for="user-number" class="modal-form__label">На какой номер перезвонить?</label>
+        <input type="tel" class="modal-form__input" id="user-number" name="Телефон" value="" minlength="16" placeholder="мобильный" data-mask="8 (000) 000-0000" required>
+
+        <label class="modal-form__label">Выберите удобное время</label>
+        <div class="modal-form__change">
+          <select name="час" id="user-hours" class="modal-form__select select-time-hour">
+            <option value="0" class="select-time-hour__item">--</option>
+            <option value="09" class="select-time-hour__item">09</option>
+            <option value="10" class="select-time-hour__item">10</option>
+            <option value="11" class="select-time-hour__item">11</option>
+            <option value="12" class="select-time-hour__item">12</option>
+            <option value="13" class="select-time-hour__item">13</option>
+            <option value="14" class="select-time-hour__item">14</option>
+            <option value="15" class="select-time-hour__item">15</option>
+            <option value="16" class="select-time-hour__item">16</option>
+            <option value="17" class="select-time-hour__item">17</option>
+            <option value="18" class="select-time-hour__item">18</option>
+            <option value="19" class="select-time-hour__item">19</option>
+          </select>
+
+          <span class="modal-form__select-delimiter">:</span>
+
+          <select name="мин" id="user-minutes" class="modal-form__select select-time-minute">
+            <option value="0" class="select-time-minute__item">--</option>
+            <option value="00" class="select-time-minute__item">00</option>
+            <option value="15" class="select-time-minute__item">15</option>
+            <option value="30" class="select-time-minute__item">30</option>
+            <option value="45" class="select-time-minute__item">45</option>
+          </select>
+        </div>
+
+        <button class="modal-form__button get-call-submit">Ждать звонка</button>
+
+      </form>
+    </div>
+
+    <!-- get-project modal -->
+    <div class="modal-wrapper" id="get-project-modal">
+      <form class="modal-form modal-form--get-project">
+
+        <div class="modal-form__close-button">+</div>
+
+        <label class="modal-form__label" for="project-user-name">Имя</label>
+        <input type="text" class="modal-form__input" id="project-user-name" name="user-name" value="" maxlength="20" minlength="2" placeholder="Имя" required>
+
+        <label for="project-user-number" class="modal-form__label">Номер телефона</label>
+        <input type="tel" class="modal-form__input" id="project-user-number" name="user-number" value="" minlength="16" placeholder="мобильный" data-mask="8 (000) 000-0000">
+
+        <label for="project-user-mail" class="modal-form__label">Почта</label>
+        <input type="email" class="modal-form__input" id="project-user-mail" name="Почта" value="" placeholder="name@adress.com" required>
+
+        <div class="modal-form__label">Тип сайта</div>
+        <div class="modal-form__radio-box">
+
+          <input type="radio" class="modal-form__radio" id="landing" name="type_site" value="landing">
+          <label for="landing" class="modal-form__label modal-form__label--radio" id="landing-checked">лэндинг</label>
+
+          <input type="radio" class="modal-form__radio" id="shop" name="type_site" value="shop">
+          <label for="shop" class="modal-form__label modal-form__label--radio" id="shop-checked">интернет-магазин</label>
+
+          <input type="radio" class="modal-form__radio" id="full-site" name="type_site" value="full-site">
+          <label for="full-site" class="modal-form__label modal-form__label--radio" id="full-site-checked">многостраничный</label>
+
+        </div>
+
+        <button class="modal-form__button">заказать</button>
+
+      </form>
+    </div>
+
+    <div class="submit-modal">
+      всё прошло успешно
+    </div>
+
+    <!-- scripts -->
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery.mask.min.js"></script>
+
+    <script src="script/main.js"></script>
+    <script src="script/forms-send.js"></script>
+    <script src="script/swiper.js"></script>
+
+  </body>
+</html>

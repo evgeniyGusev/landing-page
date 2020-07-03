@@ -1,0 +1,47 @@
+.section-button {
+  width: 280px;
+  padding: 20px 0;
+
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: $color-buttons-bg;
+  cursor: pointer;
+  transition: all .5s ease-in;
+
+  @media screen and (min-width: 900px) {
+    width: 320px;
+    padding: 27px 0;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    width: 270px;
+    padding: 23px 0;
+  }
+
+  &:hover {
+    background: none;
+		box-shadow: 0 0 4px 2px $color-buttons-bg;
+		border-radius: 2px;
+    color: $color-buttons-bg;
+    transition: .25s ease-in-out;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+		height: 100%;
+		transition: all .35s linear;
+  }
+
+  &:hover::before {
+    top: 100px;
+    background-color: #ff4e2e;
+    transition: all .5s ease-in-out;
+  }
+}
+

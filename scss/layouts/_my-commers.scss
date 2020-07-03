@@ -1,0 +1,40 @@
+.my-commerce {
+  width: 100%;
+  background: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+
+  &__wrapper {
+    max-width: 942px;
+    padding: 50px 20px;
+    text-align: left;
+
+      @media screen and (min-width: 500px) {
+        padding: 50px 40px;
+      }
+      @media screen and (min-width: 900px) {
+        padding: 86px 20px;
+      }
+  }
+
+  &__tittle {
+    margin-bottom: 47px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 45px;
+      line-height: 60px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+
+    @media screen and (min-width: 900px) {
+      font-size: 18px;
+    }
+  }
+}

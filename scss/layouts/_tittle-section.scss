@@ -1,0 +1,129 @@
+.tittle-section {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.tittle-section__wrapper {
+  @include d-flex(column, null, center, null);
+
+	position: relative;
+  padding: 55px 0 25px;
+
+  @media screen and (min-width: 1024px) {
+    @include d-flex(row-reverse, nowrap, space-between, center);
+  }
+
+  @media screen and (min-width: 1170px) {
+    min-height: 650px;
+  }
+}
+
+.tittle-section__photo-wrapper {
+  @include d-flex(null, null, center, null);
+
+  margin-bottom: 20px;
+  background-image: url('../../img/pictures/tittle-back-pic.svg');
+  background-repeat: no-repeat;
+  background-size: 390px auto;
+  background-position: center 35px;
+
+  @media screen and (min-width: 500px) {
+    background-size: 500px auto;
+  }
+
+  @media screen and (min-width: 900px) {
+    background-size: 850px auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+    background-position: 15px 125px;
+    background-size: 125%;
+  }
+
+  @media screen and (min-width: 1170px) {
+    position: absolute;
+    width: 850px;
+    right: -25%;
+    justify-content: flex-start;
+    background-size: 100% auto;
+    background-position: center 25px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    right: -35%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    right: -40%;
+  }
+
+  .tittle-section__photo {
+    width: 230px;
+    margin-left: 90px;
+    z-index: 5;
+    height: 310px;
+
+    @media screen and (min-width: 500px) {
+      width: 300px;
+      height: 400px;
+    }
+
+    @media screen and (min-width: 900px) {
+      width: 485px;
+      height: 650px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      margin-left: 9%;
+    }
+  }
+}
+
+.tittle-section__description {
+  padding: 0 20px;
+  text-align: center;
+  z-index: 9;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 0 0 20px;
+    order: 1;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1190px) {
+    padding: 0;
+  }
+
+  .tittle-section__tittle {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 51px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 54px;
+      margin-bottom: 28px;
+		}
+
+		@media screen and (min-width: 1170px) {
+			font-size: 80px;
+		}
+  }
+
+  .tittle-section__text {
+    margin-bottom: 25px;
+    color: $color-grey-text;
+    line-height: 24px;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 45px;
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      margin-bottom: 45px;
+      font-size: 24px;
+		}
+  }
+}
